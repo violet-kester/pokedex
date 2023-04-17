@@ -1,0 +1,11 @@
+.Pokedex {
+    display: flex;
+}
+
+.Pokedex-ul {
+    list-style: none;
+}
+
+.Pokedex-ul li {
+    display: inline-block;
+}
