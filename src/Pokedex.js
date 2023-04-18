@@ -14,9 +14,9 @@ import './Pokedex.css';
 
 // TODO: add a doc string - describe props
 
-function Pokedex({ pokemon }) {
+function Pokedex({ pokemon, xpsum, isWinner }) {
 
-
+  console.log(xpsum);
   return (
     <div className="Pokedex">
       <ul className="Pokedex-ul">
@@ -30,6 +30,9 @@ function Pokedex({ pokemon }) {
           </li>
         )}
       </ul>
+      <p><b>{xpsum}</b></p>
+      <p><b>{isWinner ? "This hand wins!" : null}</b></p>
+
     </div>
   );
 
